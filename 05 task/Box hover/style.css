@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252628;
+    font-family: tahoma;
+    min-height: 100vh;
+}
+.all {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box {
+    position: relative;
+}
+
+.front {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.front1 {
+    position: relative;
+    background: #252628;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: #bf9e68;
+    transform: translateY(100px);
+}
+.box:hover .front1{
+    background: #72ecff;
+    color: 663399;
+    transform: translateY(0);
+}
+.front2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+.box:hover .front2 {
+    transform: translateY(0);
+}
+.content {
+    text-align: center;
+}
+
+/* THE ICON DONT FORGET DONT FORGET DONT forget */
+
+.content h3 {
+    margin: 10px 0 0 ;
+    padding: 0;
+    font-size: 1.5em;
+}
+.content p {
+    padding: 0;
+    margin: 0;
+}
+
+.content span {
+    margin: 15px 0 0;
+    display: inline-block;
+    font-weight: 900;
+    color: #663399;
+    border: 1px solid #663399;
+    cursor: pointer;
+    padding: 5px;
+}
+span:hover {
+    background: #663399;
+    color: #fff;
+}
